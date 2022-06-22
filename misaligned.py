@@ -1,12 +1,11 @@
 Reference_Manual_List = []
 def print_color_map():
-    global Reference_Manual_List
     major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
             Concate_ReferenceManual(i,j,major,minor)         
-         print(Reference_Manual_List)   
+            
     return len(major_colors) * len(minor_colors)
 
 def Concate_ReferenceManual(i,j,major,minor):
