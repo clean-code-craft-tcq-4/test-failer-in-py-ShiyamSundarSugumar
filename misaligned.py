@@ -10,7 +10,9 @@ def print_color_map():
 
 def Concate_ReferenceManual(i,j,major,minor):
     global Reference_Manual_List
-    Reference_Manual_List.append(f'{i * 5 + j + 1} \t | {major} | \t {minor}')
+    str = (f'{i * 5 + j + 1} \t | {major} | \t {minor}')
+    print (str)
+    Reference_Manual_List.append(str)
 
 result = print_color_map()
 assert(result == 25)
