@@ -10,7 +10,7 @@ def print_color_map():
 
 def Concate_ReferenceManual(i,j,major,minor):
     global Reference_Manual_List
-    str = ('{0:4} | {1:5}  | {2:6}'.format((i * 5 + j + 1),major,minor))
+    str = ('{0:4} | {1:8} | {2:8}'.format((i * 5 + j + 1),major,minor))
     str1 = (f'{i * 5 + j + 1} \t | {major}   \t | {minor}')
     print (str)
     Reference_Manual_List.append(str)
@@ -21,5 +21,5 @@ print(Reference_Manual_List[0])
 print(Reference_Manual_List[24])
 print(Reference_Manual_List[0].find('|'))
 print(Reference_Manual_List[24].find('|'))
-#assert(Reference_Manual_List[0].find('|') == Reference_Manual_List[24].find('|') )
+assert(Reference_Manual_List[0].find('|') == Reference_Manual_List[24].find('|') )
 print("All is well (maybe!)\n")
