@@ -10,7 +10,8 @@ def print_color_map():
 
 def Concate_ReferenceManual(i,j,major,minor):
     global Reference_Manual_List
-    str = (f'{i * 5 + j + 1} \t | {major}   \t | {minor}')
+    str = (f'{0:4} | {1:5}  | {2:6}'.format((i * 5 + j + 1),major,minor))
+    str1 = (f'{i * 5 + j + 1} \t | {major}   \t | {minor}')
     print (str)
     Reference_Manual_List.append(str)
 
