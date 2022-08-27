@@ -14,5 +14,4 @@ def Concate_ReferenceManual(i,j,major,minor):
 
 result = print_color_map()
 assert(result == 25)
-assert(Reference_Manual_List[0].find("|") == Reference_Manual_List[24].find("|"))
 print("All is well (maybe!)\n")
